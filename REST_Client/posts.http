@@ -1,0 +1,45 @@
+### create
+POST http://localhost:3000/posts/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"my world",
+    "author": "fangxiao",
+    "content":"hahahaha",
+    "thumb_url":"",
+    "type":1
+}
+
+### index
+POST http://localhost:3000/posts/index HTTP/1.1
+Content-Type: application/json
+
+{
+    "pageSize":5,
+    "pageNum":1
+}
+
+### show
+POST http://localhost:3000/posts/show HTTP/1.1
+Content-Type: application/json
+
+{"id":10}
+
+### update
+POST http://localhost:3000/posts/update HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 10,
+  "title": "3.6world",
+  "author": "fangxiao333",
+  "content": "hahahaha",
+  "thumb_url": "",
+  "type": 1
+}
+
+### delete
+POST http://localhost:3000/posts/delete HTTP/1.1
+Content-Type: application/json
+
+{"id":10}
