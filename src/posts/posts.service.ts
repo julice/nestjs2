@@ -26,7 +26,7 @@ export class PostsService {
   }
 
   //   创建文章
-  async create(post: Partial<PostEntity>): Promise<PostEntity> {
+  async create(post): Promise<PostEntity> {
     const { title } = post;
     if (!title) {
       throw new HttpException('缺少文章标题', 500);
